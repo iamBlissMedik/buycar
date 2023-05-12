@@ -1,34 +1,46 @@
 <template>
-  <div>
-    <!-- navbar -->
-    <header
-      class="sticky top-0 z-50 flex justify-between items-center space-x-1 border-b bg-white p-4 shadow-md"
-    >
-      <a class="text-3xl font-mono" href="">CarBuy</a>
-    </header>
+<div>
+ <!-- navbar -->
+  <header
+    class="sticky top-0 z-50 flex justify-between items-center space-x-1 border-b bg-white p-4 shadow-md"
+  >
+    <a class="text-3xl font-mono" href="">CarBuy</a>
+  </header>
 
-    <!-- home hero -->
-    <div
-      class="relative h-screen w-full bg-no-repeat bg-bottom bg-cover bg-[url('https://mysterio.yahoo.com/mysterio/api/8964DB5E909CACD18049306AFDB356D51F83B94D69A71CF8364374A44354E9D0/autoblog/resizefill_w1062_h597;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/os/ab/_cms/2021/10/12164830/2022-Lexus-LX-600-Ultra-Luxury-action-desert-front.jpg')]"
-    >
-      <!--home hero text -->
-
-      <div class="z-10 absolute w-full h-full flex justify-center items-center">
-        <div class="text-center font-serif w-1/2">
-          <h1 class="text-8xl  mb-10 text-white">
-            Find Your Car
-          </h1>
-          <!-- search bar -->
-          <div class="w-[1000px] text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto">
-            <input type="text" class="py-3 px-5 w-full focus:outline-none " placeholder="Search by city..">
-            <button class="bg-sky-500 px-10 text-white">Search</button>
-          </div>
-        </div>
+  <div class="mx-auto mt-32 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16 w-3/5 ">
+    <!-- cars page -->
+  <div class=" flex ">
+    <!-- cars side bar -->
+    <div class="shadow border w-64 mr-10 z-30 h-[190px]">
+      <div class="p-5 flex justify-between relative cursor-pointer border-b">
+        <h3>Location</h3>
+        <h3 class="text-blue-400 capitalize">Toronto</h3>
+        <!-- <div class="absolute border shadow left-56 p-5 top-1 bg-white -m-1">
+          <input type="text" class="border p-1 rounded">
+          <button class="bg-blue-400 w-full mt-2 text-white rounded p-1">Apply</button>
+        </div> -->
       </div>
-      <!-- dark background -->
-      <div class="z-1 absolute  w-full h-full bg-black opacity-50">
+
+      <!-- second -->
+      <div class="p-5 flex justify-between relative cursor-pointer border-b">
+        <h3>Make</h3>
+        <h3 class="text-blue-400 capitalize">Toyota</h3>
+
+      </div>
+      <!-- third -->
+
+      <div class="p-5 flex justify-between relative cursor-pointer border-b">
+        <h3>Price</h3>
+        
 
       </div>
     </div>
+    <!-- car cards -->
+    <div>
+
+    </div>
+
   </div>
+  </div>
+</div>
 </template>
