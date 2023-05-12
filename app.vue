@@ -14,10 +14,15 @@
       <!--home hero text -->
 
       <div class="z-10 absolute w-full h-full flex justify-center items-center">
-        <div class="text-center w-1/2">
-          <h1 class="text-8xl font-serif mb-10 text-white">
+        <div class="text-center font-serif w-1/2">
+          <h1 class="text-8xl  mb-10 text-white">
             Find Your Car
           </h1>
+          <!-- search bar -->
+          <div class="w-[1000px] text-2xl rounded-full bg-white flex justify-between overflow-hidden drop-shadow-2xl mx-auto">
+            <input type="text" class="py-3 px-5 w-full focus:outline-none " placeholder="Search by city..">
+            <button class="bg-sky-500 px-10 text-white">Search</button>
+          </div>
         </div>
       </div>
       <!-- dark background -->
