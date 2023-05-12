@@ -6,7 +6,6 @@
     >
       <a class="text-3xl font-mono" href="">CarBuy</a>
     </header>
-
-    
+   
   </div>
 </template>
