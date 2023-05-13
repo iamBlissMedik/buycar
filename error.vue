@@ -2,7 +2,9 @@
 const { message, statusCode } = useError().value;
 
 const handleError = () => {
-  navigateTo("/");
+  clearError({
+    redirect: "/",
+  });
 };
 </script>
 

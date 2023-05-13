@@ -11,6 +11,12 @@ definePageMeta({
 const car = computed(() => {
   return cars.find((car) => car.id === parseInt(route.params.id));
 });
+if (!car.value) {
+  throw createError({
+    statusCode: 404,
+    message: `Car with the id of ${route.params.id} does not exist`,
+  });
+}
 </script>
 
 <template>
@@ -18,8 +24,8 @@ const car = computed(() => {
 
   <div v-if="car">
     <CarDetailsHero :car="car" />
-    <CarDetailsAttributes :attributes="car.features"/>
-    <CarDetailsDescription :description="car.description"/>
+    <CarDetailsAttributes :attributes="car.features" />
+    <CarDetailsDescription :description="car.description" />
     <CarDetailsContact />
   </div>
 </template>
