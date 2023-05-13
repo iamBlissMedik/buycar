@@ -10,6 +10,12 @@ const city = ref("");
 const updateModal = (key) => (modal.value[key] = !modal.value[key]);
 const onChangeLocation = () => {
   if (!city.value) return;
+  if (!isNaN(city.value)) {
+    throw createError({
+      statusCode: 400,
+      message: "ivalid city",
+    });
+  }
   updateModal("location");
   navigateTo(`/city/${city.value}/car/${route.params.make}`);
   city.value = "";
